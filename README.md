@@ -72,7 +72,7 @@ Error Code	- — No error code was reported
 Step 6: Analyze the Second Event
 
 <img width="1036" height="418" alt="image" src="https://github.com/user-attachments/assets/9647f996-00e2-466d-ac3e-b05b29770ca1" />
-~~~
+
 RESULT
 The cloud activities in AWS were successfully audited using AWS CloudTrail Event History.
 
@@ -86,4 +86,3 @@ AWS Region
 Read-only status
 Error status
 The experiment demonstrated how AWS CloudTrail provides an audit trail for monitoring, accountability, and investigation of cloud activities.
-~~~
