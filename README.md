@@ -45,13 +45,15 @@ Resource Type
 Resource Name
 ~~~
 <img width="1600" height="730" alt="WhatsApp Image 2026-08-26 at 9 19 48 PM" src="https://github.com/user-attachments/assets/db760ad7-4e9e-4697-a33b-36cc8ef306f9" />
-
+~~~
 PART B — ANALYZE A CLOUDTRAIL EVENT
+~~~
 Step 3: Select an Event
 From the Event History list, select an S3-related event.
 Click the event to open its details.
 Examine the event information and the event record/JSON.
 For this experiment, a CreateKeyPair event can be used.
+<img width="1600" height="730" alt="image" src="https://github.com/user-attachments/assets/d304df44-ab4f-4576-8916-148edfa2fca2" />
 
 Step 4: Analyze the CreateKeyPair Event
 The CreateKeyPair event indicates that an Amazon EC2 bucket creation operation occurred.
