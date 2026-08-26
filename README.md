@@ -25,7 +25,9 @@ In the AWS search bar, type CloudTrail.
 Select AWS CloudTrail.
 Screenshot 1: AWS CloudTrail Dashboard
 ~~~
+~~~
 <img width="1600" height="731" alt="WhatsApp Image 2026-08-26 at 9 19 07 PM" src="https://github.com/user-attachments/assets/22d609ec-bd22-41e6-8f5f-c93908b0cd1c" />
+~~~
 ~~~
 Step 2: Open Event History
 In the CloudTrail navigation menu, select Event history.
