@@ -1,6 +1,7 @@
 # Risk-assessment
 
 EXPERIMENT 5
+~~~
 AUDITING CLOUD ACTIVITY USING AWS CLOUDTRAIL
 Objective
 To audit and monitor cloud activity in AWS using AWS CloudTrail by viewing and analyzing recorded AWS events and identifying important audit information such as:
@@ -25,7 +26,7 @@ In the AWS search bar, type CloudTrail.
 Select AWS CloudTrail.
 Screenshot 1: AWS CloudTrail Dashboard
 
-
+~~~
 
 <img width="1600" height="731" alt="WhatsApp Image 2026-08-26 at 9 19 07 PM" src="https://github.com/user-attachments/assets/22d609ec-bd22-41e6-8f5f-c93908b0cd1c" />
 
