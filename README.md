@@ -26,7 +26,9 @@ Select AWS CloudTrail.
 Screenshot 1: AWS CloudTrail Dashboard
 ~~~
 ~~~
+~~~
 <img width="1600" height="731" alt="WhatsApp Image 2026-08-26 at 9 19 07 PM" src="https://github.com/user-attachments/assets/22d609ec-bd22-41e6-8f5f-c93908b0cd1c" />
+~~~
 ~~~
 ~~~
 Step 2: Open Event History
@@ -68,6 +70,7 @@ Error Code	- — No error code was reported
 <img width="1035" height="357" alt="WhatsApp Image 2026-08-26 at 9 37 05 PM" src="https://github.com/user-attachments/assets/29755dab-d768-4559-a4d7-420a9e2dda75" />
 
 Step 6: Analyze the Second Event
+
 <img width="1036" height="418" alt="image" src="https://github.com/user-attachments/assets/9647f996-00e2-466d-ac3e-b05b29770ca1" />
 ~~~
 RESULT
