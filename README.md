@@ -1,91 +1,161 @@
-# Risk-assessment
-
-EXPERIMENT 5
-~~~
-AUDITING CLOUD ACTIVITY USING AWS CLOUDTRAIL
-Objective
-To audit and monitor cloud activity in AWS using AWS CloudTrail by viewing and analyzing recorded AWS events and identifying important audit information such as:
-
-User identity
-Event name
-Event time
-AWS service
-Region
-Operation status
-1. Requirements
-AWS Account
-Web Browser
-Internet Connection
-Amazon S3 Access
-AWS CloudTrail
-PART A — ACCESS AWS CLOUDTRAIL
-Step 1: Login to AWS
-Open the AWS Management Console.
-Sign in using your AWS account.
-In the AWS search bar, type CloudTrail.
-Select AWS CloudTrail.
-Screenshot 1: AWS CloudTrail Dashboard
-
-~~~
-
-<img width="1600" height="731" alt="WhatsApp Image 2026-08-26 at 9 19 07 PM" src="https://github.com/user-attachments/assets/22d609ec-bd22-41e6-8f5f-c93908b0cd1c" />
 
 
+# EXPERIMENT 5
+## NAME  : RAHUL
+## REGNO : 212225230294
 
-Step 2: Open Event History
-In the CloudTrail navigation menu, select Event history.
-CloudTrail displays recent AWS activity.
-Review the available events.
-The Event History page may display information such as:
+## ASSET-ORIENTED RISK ASSESSMENT OF STORAGE ASSETS IN AWS 
 
-Event Time
-Username
-Event Name
-Event Source
-Resource Type
-Resource Name
 
-<img width="1600" height="730" alt="WhatsApp Image 2026-08-26 at 9 19 48 PM" src="https://github.com/user-attachments/assets/db760ad7-4e9e-4697-a33b-36cc8ef306f9" />
+## Aim
 
-PART B — ANALYZE A CLOUDTRAIL EVENT
+To identify storage assets in **AWS S3**.
 
-Step 3: Select an Event
-From the Event History list, select an S3-related event.
-Click the event to open its details.
-Examine the event information and the event record/JSON.
-For this experiment, a CreateKeyPair event can be used.
-<img width="1600" height="730" alt="image" src="https://github.com/user-attachments/assets/d304df44-ab4f-4576-8916-148edfa2fca2" />
 
-Step 4: Analyze the CreateKeyPair Event
-The CreateKeyPair event indicates that an Amazon EC2 bucket creation operation occurred.
+## Software / Cloud Services Required
 
-CreateKeyPair Event Observation
-Meaning of Important Fields
-Field	Meaning / Observation
-Event Time	August 04, 2026, 13:55:44 (UTC+05:30) — Time at which the activity occurred
-User Name	root — User/identity associated with the activity
-Event Name	CreateKeyPair — AWS operation that was performed
-Event Source	ec2.amazonaws.com — AWS service that generated the event
-AWS Region	eu-north-1 — Region where the activity occurred
-Read-only	false — The event involved a change/creation operation
-Error Code	- — No error code was reported
+- AWS Account
+- Microsoft Azure Account
+- Web Browser
+- Internet Connection
 
-<img width="1035" height="357" alt="WhatsApp Image 2026-08-26 at 9 37 05 PM" src="https://github.com/user-attachments/assets/29755dab-d768-4559-a4d7-420a9e2dda75" />
+### Cloud Services Used
 
-Step 6: Analyze the Second Event
+| Cloud Platform | Storage Service |
+|---|---|
+| AWS | Amazon S3 |
 
-<img width="1036" height="418" alt="image" src="https://github.com/user-attachments/assets/9647f996-00e2-466d-ac3e-b05b29770ca1" />
 
-RESULT
-The cloud activities in AWS were successfully audited using AWS CloudTrail Event History.
+## AWS S3 STORAGE ASSESSMENT
 
-Different AWS events were examined based on:
+## Step 1: Login to AWS
 
-Event time
-User identity
-Event name
-Event source
-AWS Region
-Read-only status
-Error status
-The experiment demonstrated how AWS CloudTrail provides an audit trail for monitoring, accountability, and investigation of cloud activities.
+1. Open the AWS Management Console.
+2. Sign in using your AWS account.
+3. Search for **S3**.
+4. Select **Amazon S3**.
+
+
+## Step 2: Select the S3 Bucket
+
+1. Click **Buckets**.
+2. Select the S3 bucket created in the previous experiment.
+3. Record:
+   - Bucket name
+   - AWS Region
+   - Number/type of objects
+
+<img width="1600" height="711" alt="image" src="https://github.com/user-attachments/assets/89381d55-c0c4-4410-93eb-61d5dcfddaa3" />
+
+
+
+
+
+## Step 3: Check Block Public Access
+
+1. Open the S3 bucket.
+2. Select **Permissions**.
+3. Locate **Block public access (bucket settings)**.
+4. Check **Block all public access**.
+
+### Record
+
+- **ON** → Secure configuration
+- **OFF** → Potential public-access risk
+
+<img width="1600" height="720" alt="image" src="https://github.com/user-attachments/assets/3e7ae187-0a05-4e4d-a7ab-68f17dd6f89a" />
+
+
+
+
+
+## Step 4: Check Bucket Versioning
+
+1. Select the **Properties** tab.
+2. Locate **Bucket Versioning**.
+3. Record whether it is:
+   - Enabled
+   - Disabled
+
+### Security Purpose
+
+Versioning helps recover previous versions of objects after accidental deletion or modification.
+
+<img width="1600" height="499" alt="image" src="https://github.com/user-attachments/assets/804d3a9d-9a87-4ef8-9485-6aeeadf68aeb" />
+
+
+
+
+## Step 5: Check Default Encryption
+
+1. Stay in the **Properties** tab.
+2. Locate **Default encryption**.
+3. Record the encryption type.
+
+### Possible Configurations
+
+- SSE-S3
+- SSE-KMS
+- DSSE-KMS
+
+### Security Purpose
+
+Encryption protects stored data from unauthorized disclosure.
+
+<img width="1600" height="718" alt="image" src="https://github.com/user-attachments/assets/13d79332-0ff7-4089-a52b-ef85ca3f347e" />
+
+## Step 6: Check Bucket Policy
+
+1. Select **Permissions**.
+2. Locate **Bucket policy**.
+3. Check whether a bucket policy exists.
+
+### Record
+
+- Policy exists
+- No policy
+
+> **Note:** A missing bucket policy is not automatically a vulnerability. Access may be controlled through IAM and other AWS security mechanisms.
+
+<img width="1600" height="735" alt="image" src="https://github.com/user-attachments/assets/f5df64a6-e0a8-4695-9d43-3e41717d6187" />
+
+
+
+## Step 7: Check Object Ownership and ACL
+
+1. In **Permissions**, locate **Object Ownership**.
+2. Record the current configuration.
+
+A common secure configuration is:
+
+**Bucket owner enforced**
+
+This means:
+
+- ACLs are disabled.
+- Objects are owned by the bucket owner.
+- Access is controlled using policies.
+<img width="1600" height="499" alt="image" src="https://github.com/user-attachments/assets/781a79c8-8072-49cf-9532-8d9ebbb06b66" />
+
+
+## Step 8: Check Server Access Logging
+
+1. Go to **Properties**.
+2. Locate **Server access logging**.
+3. Record whether it is:
+   - Enabled
+   - Disabled
+
+### Security Purpose
+
+Logging helps investigate suspicious or unauthorized access to the bucket.
+<img width="1600" height="684" alt="image" src="https://github.com/user-attachments/assets/01d3079c-25c8-442b-9ee3-98f48e7b7b7b" />
+
+
+
+
+
+## Result
+
+AWS S3 security configurations were analyzed and potential risks were identified.
+
